@@ -8,16 +8,10 @@ This project is aimed to run [sourcerer app](https://github.com/sourcerer-io/sou
 docker build -t my-sourcerer-app .
 ```
 
-or
-
-```
-docker-compose build
-```
-
 ## Run sourcerer app
 
 ```
-alias sourcerer='docker-compose run -v <path/to/your/repos>:/projects sourcerer'
+alias sourcerer='cd path/to/sourcerer-app-docker && docker-compose run -v <path/to/your/repos>:/projects sourcerer'
 sourcerer --help
 sourcerer add <any-project-in-your-repos-path>
 ```
@@ -30,6 +24,9 @@ awesome-project
 
 # add a project to sourcerer
 sourcerer add awesome-project
+
+# check tracked repositories
+sourcerer list
 
 # process statistics
 sourcerer
