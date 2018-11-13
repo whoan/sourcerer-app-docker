@@ -10,5 +10,5 @@ services:
     stdin_open: true
     tty: true
     volumes:
-      - ./data:/root/.sourcerer/data
+      - ~/.sourcerer/data:/root/.sourcerer/data
     working_dir: /projects
