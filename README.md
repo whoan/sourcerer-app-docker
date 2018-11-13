@@ -1,6 +1,6 @@
 # Dockerfile for sourcerer app
 
-This project is aimed to run sourcerer app locally with docker.
+This project is aimed to run [sourcerer app](https://github.com/sourcerer-io/sourcerer-app) locally with docker
 
 ## Build the image
 
@@ -8,7 +8,7 @@ This project is aimed to run sourcerer app locally with docker.
 docker build -t my-sourcerer-app .
 ```
 
-or:
+or
 
 ```
 docker-compose build
