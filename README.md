@@ -11,9 +11,14 @@ docker build -t my-sourcerer-app .
 ## Run sourcerer app
 
 ```
-alias sourcerer='cd path/to/sourcerer-app-docker && docker-compose run -v <path/to/your/repos>:/projects sourcerer'
+# function ready for your initialization file (eg: ~/.bashrc)
+sourcerer() {
+  local sourcerer_app_docker=/path/to/sourcerer-app-docker/  # CHANGE THIS!
+  local repos=/path/to/your/repos/                           # CHANGE THIS!
+  docker-compose -f "$sourcerer_app_docker"/docker-compose.yml run -v "$repos":/projects sourcerer
+}
 sourcerer --help
-sourcerer add <any-project-in-your-repos-path>
+sourcerer add <any-project-in-$repos>
 ```
 
 ## Example
