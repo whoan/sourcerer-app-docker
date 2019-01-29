@@ -15,7 +15,7 @@ docker build -t my-sourcerer-app .
 sourcerer() {
   local sourcerer_app_docker=/path/to/sourcerer-app-docker/  # CHANGE THIS!
   local repos=/path/to/your/repos/                           # CHANGE THIS!
-  docker-compose -f "$sourcerer_app_docker"/docker-compose.yml run -v "$repos":/projects sourcerer
+  docker-compose -f "$sourcerer_app_docker"/docker-compose.yml run -v "$repos":/projects sourcerer "$@"
 }
 sourcerer --help
 sourcerer add <any-project-in-$repos>
