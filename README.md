@@ -39,4 +39,4 @@ sourcerer
 
 ## License
 
-**sourcerer-app-docker** is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+[MIT](https://github.com/whoan/sourcerer-app-docker/blob/master/LICENSE)
